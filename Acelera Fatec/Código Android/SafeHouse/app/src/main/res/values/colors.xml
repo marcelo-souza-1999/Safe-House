@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01C7D2</color>
+    <color name="colorPrimaryDark">#00B2BC</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorOlhoSenha">#757171</color>
+    <color name="branco_translucido">#F8FFFFFF</color>
+    <color name="red">#FB0404</color>
+</resources>

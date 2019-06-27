@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.PrincipalFragment">
+
+
+    <TextView
+        android:id="@+id/textViewTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="SAFE  HOUSE\n SUA CASA EM SEGURANÇA"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNomeCasa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/ic_principal_preto_24dp"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:text="  Casa da família:"
+        android:textColor="#45B5EC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsuario" />
+
+    <TextView
+        android:id="@+id/textViewUsuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_pessoa_cinza_24dp"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:text="  Usuário logado:                                                                         "
+        android:textColor="#45B5EC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNomeCasa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLogin" />
+
+
+    <TextView
+        android:id="@+id/textViewAlarme"
+        android:layout_width="64dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Alarme:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAtivado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeCasa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeCasa"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <Button
+            android:id="@+id/buttonAtivarAlarme"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_ativar_alarme_24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="ATIVAR ALARME"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/branco_translucido"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonAbrirGaragem"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_abrir_garagem_24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Abrir Garagem"
+            android:textColor="@color/branco_translucido"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="279dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAtivado"
+        android:layout_width="92dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Desativado"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/textViewAlarme"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeCasa"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.CasaActivity">
+
+    <TextView
+        android:id="@+id/textViewExemploNomeCasa"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_principal_preto_24dp"
+        android:drawableTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:text="Casa da família:Nome da sua casa"
+        android:textColor="#45B5EC"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/InputSenhaAlarme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExemplo" />
+
+    <TextView
+        android:id="@+id/textViewTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="INFORMAÇÕES DA\nSUA CASA "
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewExemplo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <TextView
+        android:id="@+id/textViewExemplo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Insira um nome para sua casa\nConforme o exemplo abaixo"
+        android:textColor="#45B5EC"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewExemploNomeCasa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLogin" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/InputSenhaAlarme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExemploNomeCasa">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextNomeCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_principal_preto_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/nome"
+            android:textColor="#45B5EC"
+            android:textColorHint="#45B5EC"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:onClick="verificarCasa"
+        android:text="SALVAR"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputSenhaAlarme"
+        app:layout_constraintVertical_bias="0.057" />
+
+</android.support.constraint.ConstraintLayout>

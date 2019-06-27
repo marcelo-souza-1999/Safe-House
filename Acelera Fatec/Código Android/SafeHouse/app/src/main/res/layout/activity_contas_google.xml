@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitsCarregando.CadastroGoogleActivity">
+
+    <FrameLayout
+        android:id="@+id/frameCarregando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/branco_translucido">
+
+        <ProgressBar
+            android:id="@+id/progressBarCarregandoContas"
+            android:layout_width="178dp"
+            android:layout_height="242dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="Verificando dados..."
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="22sp" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

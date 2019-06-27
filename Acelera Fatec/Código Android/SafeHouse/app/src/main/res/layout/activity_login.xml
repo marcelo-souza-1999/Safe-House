@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Acesse sua conta "
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/InputEmail"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLogin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_cinza_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/InputSenha"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputEmail"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorOlhoSenha">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextSenhaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_cadeado_cinza_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/senha"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="acessarConta"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputSenha" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_userLogin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="182dp"
+        android:src="@drawable/foto_perfil"
+        android:visibility="invisible"
+        app:civ_border_color="@color/branco_translucido"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botaoGoogleLogin" />
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:id="@+id/botaoGoogleLogin"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="btnLoginGoogle"
+        android:text="Entre com o Google"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:isDarkTheme="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrar" />
+
+    <TextView
+        android:id="@+id/textViewRecuperarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="trocarSenha"
+        android:text="Esqueci a senha"
+        android:textAlignment="center"
+        android:textColor="#45B5EC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCriarConta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGoogleLogin" />
+
+    <TextView
+        android:id="@+id/textViewCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="criarConta"
+        android:text="Criar uma conta"
+        android:textAlignment="center"
+        android:textColor="#45B5EC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewRecuperarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGoogleLogin" />
+
+</android.support.constraint.ConstraintLayout>

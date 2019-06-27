@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_principal"
+        android:icon="@drawable/ic_principal_preto_24dp"
+        android:title="Principal" />
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_camera_ip_24dp"
+        android:title="Acessar câmera" />
+    <item
+        android:id="@+id/nav_configuracoes"
+        android:icon="@drawable/ic_alarme_preto_24dp"
+        android:title="Configurações" />
+    <item
+        android:id="@+id/nav_graficos"
+        android:icon="@drawable/ic_graficos_preto_24dp"
+        android:title="Gráficos" />
+    <item
+        android:id="@+id/nav_usuarios"
+        android:icon="@drawable/ic_usuarios_preto_24dp"
+        android:title="Usuários" />
+    <item
+        android:id="@+id/nav_conta"
+        android:icon="@drawable/ic_perfil_preto_24dp"
+        android:title="Minha conta" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout_preto_24dp"
+        android:title="Sair" />
+  </group>
+
+  <item android:title="Comunicação">
+    <menu>
+      <item
+          android:id="@+id/nav_sobre"
+          android:icon="@drawable/ic_sobre_preto_24dp"
+          android:title="Sobre" />
+    </menu>
+  </item>
+
+</menu>

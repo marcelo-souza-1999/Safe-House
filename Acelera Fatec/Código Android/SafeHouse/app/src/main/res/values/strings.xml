@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Safe House</string>
+    <string name="crie_sua_conta_gr_tis">Crie sua conta grátis</string>
+    <string name="controle_sua_casa_pelo_seu_smartphone_comece_j">Controle sua casa pelo seu Smartphone, comece já</string>
+    <string name="cadastre_se">CADASTRE-SE</string>
+    <string name="j_tenho_uma_conta">Já tenho uma conta</string>
+    <string name="insira_seus_dados_para_o_cadastro">Insira seus dados para o cadastro</string>
+    <string name="insira_os_dados_solicitados_npara_cadastrar_se_no_sistema">Insira os dados solicitados\npara cadastrar-se no sistema</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="entre_com_a_conta_da_google">Entre com a conta da Google</string>
+    <string name="come_ar">Começar</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+
+    <string name="cadastre_se_com_o_google">Cadastre-se com o Google</string>
+    <string name="verificando_dados">Verificando dados...</string>
+    <string name="salvando_seus_dados">Salvando seus dados...</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_principal">Principal</string>
+    <string name="menu_alarme">Meu alarme</string>
+    <string name="menu_graficos">Gráficos</string>
+    <string name="menu_usuarios">Usuários</string>
+    <string name="menu_conta">Minha conta</string>
+    <string name="menu_logout">Sair</string>
+    <string name="menu_contato">Contato</string>
+    <string name="menu_sobre">Sobre</string>
+    <string name="comunica_o">Comunicação</string>
+    <string name="remover_foto">Remover foto</string>
+    <string name="foto_de_perfil">Foto de Perfil</string>
+    <string name="inserir_foto">Inserir foto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="alarme">Alarme</string>
+    <string name="insira_o_nome_da_nsua_casa">INSIRA O NOME DA\nSUA CASA</string>
+    <string name="nome_da_sua_casa">Nome da sua casa</string>
+    <string name="exemplo">EXEMPLO</string>
+    <string name="textviewToast">TextView</string>
+    <string name="gerenciamento_da_sua_nresid_ncia">GERENCIAMENTO DA SUA\nRESIDÊNCIA</string>
+    <string name="title_activity_definir_senha_alarme">DefinirSenhaAlarmeActivity</string>
+    <string name="cadastrar_usu_rios">Cadastrar Usuários</string>
+    <string name="administrador">Administrador</string>
+    <string name="comum">Comum</string>
+    <string name="usu_rio">Usuário:</string>
+    <string name="meu_perfil">Meu Perfil</string>
+    <string name="nome_usu_rio">Nome Usuário</string>
+    <string name="email_usu_rio">Email Usuário</string>
+    <string name="nome_da_casa">Nome da Casa</string>
+    <string name="alterar_senha">Alterar Senha</string>
+    <string name="insira_seu_nome">Insira seu nome</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salvar">Salvar</string>
+    <string name="insira_a_senha">Insira a senha</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="defina_uma_senha_para_o_alarme">Defina uma senha para o alarme</string>
+    <string name="insira_uma_senha_num_rica_de_6_digitos">Insira uma senha numérica de 6 digitos</string>
+    <string name="senha">Senha</string>
+    <string name="sobre">SOBRE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="informa_es_sobre_os_desenvolvedores">Informações sobre os desenvolvedores</string>
+    <string name="a_empresa_safe_house_vem_com_o_intuito_de_trazer_seguran_a_para_a_sua_fam_lia_buscando_sempre_te_deixar_conectado_com_sua_casa_mesmo_voc_estando_longe_no_melhor_alarme_de_seguran_a_para_voc">A empresa Safe House vem com o intuito de trazer segurança para a sua família, buscando sempre te deixar conectado com sua casa, mesmo você estando longe. O melhor alarme de segurança para você</string>
+    <string name="fabiano_luiz">Fabiano</string>
+    <string name="designer_do_aplicativo_mobile_e_web">Designer da Aplicação e Programação Web</string>
+    <string name="lucas_martins">Lucas</string>
+    <string name="programa_o_do_arduino">Programação Mobile e Arduino</string>
+    <string name="programa_o_mobile_e_web_service">Programação Mobile e Web Service</string>
+    <string name="marcelo_souza">Marcelo</string>
+    <string name="whalesson">Whalesson</string>
+</resources>
